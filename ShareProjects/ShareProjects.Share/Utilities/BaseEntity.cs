@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bank.Domain.Models
+namespace ShareProjects.Share.Utilities
 {
     public class BaseEntity
     {

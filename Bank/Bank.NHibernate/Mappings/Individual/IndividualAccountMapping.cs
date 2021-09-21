@@ -13,7 +13,6 @@ namespace Bank.NHibernate.Mappings
             Table("IndividualAccount");
             Id(individual => individual.Id).GeneratedBy.GuidComb();
             Map(individual => individual.AccountType).Unique();
-            References(individual => individual.IndividualCustomer);
         }
     }
 }

@@ -12,16 +12,18 @@ namespace Bank.NHibernate.Mappings
         {
             Table("CompanyCustomer");
             Id(company => company.Id).GeneratedBy.GuidComb();
-            Map(company => company.Name);
+            Map(company => company.Name).Not.Nullable();
             Map(company => company.Email);
             Map(company => company.Address);
             Map(company => company.Country);
-            Map(company => company.DateOfPayment);
+            Map(company => company.DateOfTransaction);
             Map(company => company.DateOfRegistration);
             Map(company => company.Balance);
-            Map(company => company.Payment);
+            Map(company => company.AmountCredited);
+            Map(company => company.AmountDebited);
             Map(company => company.Description);
-            References(company => company.CompanyAccount);
+            CompositeId().KeyReference(company => company.CompanyAccount)
+                         .KeyReference(company => company.BankBranch);
         }
     }
 }

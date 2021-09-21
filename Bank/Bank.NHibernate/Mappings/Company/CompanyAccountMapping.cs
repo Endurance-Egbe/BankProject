@@ -11,7 +11,6 @@ namespace Bank.NHibernate.Mappings
             Table("CompanyAccount");
             Id(company => company.Id).GeneratedBy.GuidComb();
             Map(company => company.AccountType).Unique();
-            References(company => company.IndividualCustomer);
         }
     }
 }

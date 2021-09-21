@@ -5,11 +5,21 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bank", "Bank", "{E277881B-5279-44D6-8E63-3C7B1CE85571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Domain", "Bank\ClassLibrary1\Bank.Domain.csproj", "{5C32A163-C058-4572-ACAA-5C7B603403C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Domain", "Bank\ClassLibrary1\Bank.Domain.csproj", "{5C32A163-C058-4572-ACAA-5C7B603403C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Infrastructure", "Bank\Bank.Infrastructure\Bank.Infrastructure.csproj", "{CF7F52C9-F01D-4D3E-B951-8EFA41617524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Infrastructure", "Bank\Bank.Infrastructure\Bank.Infrastructure.csproj", "{CF7F52C9-F01D-4D3E-B951-8EFA41617524}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.NHibernate", "Bank\Bank.NHibernate\Bank.NHibernate.csproj", "{E4EC0AF3-B371-4C90-AD72-24A48D298E3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.NHibernate", "Bank\Bank.NHibernate\Bank.NHibernate.csproj", "{E4EC0AF3-B371-4C90-AD72-24A48D298E3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShareProjects", "ShareProjects", "{22736BA6-6B12-4C07-9436-89DE7D8E047E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareProjects.Share", "ShareProjects\ShareProjects.Share\ShareProjects.Share.csproj", "{11C084C5-25D0-422B-8BCB-BCBFB3035CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Configuration", "ShareProjects\NHibernate.Configuration.DatabasePipeline\NHibernate.Configuration.csproj", "{7B21815C-218F-4E34-BFF8-247611D5F5CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Application", "Bank\Bank.Application\Bank.Application.csproj", "{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAPI", "BankAPI\BankAPI.csproj", "{BEFE5038-F8A5-43C2-8D85-932988276CB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +39,22 @@ Global
 		{E4EC0AF3-B371-4C90-AD72-24A48D298E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4EC0AF3-B371-4C90-AD72-24A48D298E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4EC0AF3-B371-4C90-AD72-24A48D298E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C084C5-25D0-422B-8BCB-BCBFB3035CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C084C5-25D0-422B-8BCB-BCBFB3035CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C084C5-25D0-422B-8BCB-BCBFB3035CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C084C5-25D0-422B-8BCB-BCBFB3035CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B21815C-218F-4E34-BFF8-247611D5F5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B21815C-218F-4E34-BFF8-247611D5F5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B21815C-218F-4E34-BFF8-247611D5F5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B21815C-218F-4E34-BFF8-247611D5F5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEFE5038-F8A5-43C2-8D85-932988276CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEFE5038-F8A5-43C2-8D85-932988276CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEFE5038-F8A5-43C2-8D85-932988276CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEFE5038-F8A5-43C2-8D85-932988276CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +63,9 @@ Global
 		{5C32A163-C058-4572-ACAA-5C7B603403C9} = {E277881B-5279-44D6-8E63-3C7B1CE85571}
 		{CF7F52C9-F01D-4D3E-B951-8EFA41617524} = {E277881B-5279-44D6-8E63-3C7B1CE85571}
 		{E4EC0AF3-B371-4C90-AD72-24A48D298E3B} = {E277881B-5279-44D6-8E63-3C7B1CE85571}
+		{11C084C5-25D0-422B-8BCB-BCBFB3035CFE} = {22736BA6-6B12-4C07-9436-89DE7D8E047E}
+		{7B21815C-218F-4E34-BFF8-247611D5F5CC} = {22736BA6-6B12-4C07-9436-89DE7D8E047E}
+		{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD} = {E277881B-5279-44D6-8E63-3C7B1CE85571}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D228D5A1-AB09-4653-83F3-02A420EC99A3}
