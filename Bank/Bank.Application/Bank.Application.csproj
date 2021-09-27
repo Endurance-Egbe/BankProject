@@ -5,8 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Queries\" />
+    <Folder Include="Commands\CompanyCustomerCommands\" />
+    <Folder Include="Commands\EmployeeCommands\" />
+    <Folder Include="Commands\IndividualCustomerCommands\" />
+    <Folder Include="Queries\BankBranchQueries\" />
+    <Folder Include="Queries\CompanyCustomerQueries\" />
+    <Folder Include="Queries\EmployeeQueries\" />
+    <Folder Include="Queries\IndividualCustomerQueries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ShareProjects\ShareProjects.Share\ShareProjects.Share.csproj" />
+    <ProjectReference Include="..\Bank.NHibernate\Bank.NHibernate.csproj" />
+    <ProjectReference Include="..\ClassLibrary1\Bank.Domain.csproj" />
   </ItemGroup>
 
 </Project>
