@@ -15,11 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShareProjects", "ShareProje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareProjects.Share", "ShareProjects\ShareProjects.Share\ShareProjects.Share.csproj", "{11C084C5-25D0-422B-8BCB-BCBFB3035CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Configuration", "ShareProjects\NHibernate.Configuration.DatabasePipeline\NHibernate.Configuration.csproj", "{7B21815C-218F-4E34-BFF8-247611D5F5CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NHibernate.Configuration", "ShareProjects\NHibernate.Configuration.DatabasePipeline\NHibernate.Configuration.csproj", "{7B21815C-218F-4E34-BFF8-247611D5F5CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank.Application", "Bank\Bank.Application\Bank.Application.csproj", "{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank.Application", "Bank\Bank.Application\Bank.Application.csproj", "{8B1EFADC-8BF1-41BD-8568-B73AD6901DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAPI", "BankAPI\BankAPI.csproj", "{BEFE5038-F8A5-43C2-8D85-932988276CB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAPI", "BankAPI\BankAPI.csproj", "{BEFE5038-F8A5-43C2-8D85-932988276CB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

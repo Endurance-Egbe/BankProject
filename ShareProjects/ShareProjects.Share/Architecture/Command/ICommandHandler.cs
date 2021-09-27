@@ -11,4 +11,8 @@ namespace ShareProjects.Share.Architecture.Command
     {
         Task<ActionResult<TResult>> HandleAsync(TCommand command, CancellationToken token = default);
     }
+    public interface ICommandHandler<TCommand> where TCommand : Command
+    {
+        Task<ActionResult> HandleAsync(TCommand command, CancellationToken token = default);
+    }
 }
