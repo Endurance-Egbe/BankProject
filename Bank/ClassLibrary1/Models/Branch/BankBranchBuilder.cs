@@ -26,6 +26,11 @@ namespace Bank.Domain.Models.Branch
             _address = address;
             return this;
         }
+        public BankBranchBuilder SetCountry(string country)
+        {
+            _country = country;
+            return this;
+        }
         public BankBranch Build()
         {
             return new BankBranch
@@ -40,5 +45,6 @@ namespace Bank.Domain.Models.Branch
         private string _email;
         private string _description;
         private string _address;
+        private string _country;
     }
 }
